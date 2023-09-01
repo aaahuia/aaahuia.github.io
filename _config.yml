@@ -1,7 +1,7 @@
 # 基本设置
 title: My Jekyll Blog
 description: A simple blog built with Jekyll
-baseurl: "" # 如果你使用自定义域名，请设置为你的域名，例如 "/blog"
+baseurl: "wangdonghui.com" # 如果你使用自定义域名，请设置为你的域名，例如 "/blog"
 url: "https://example.com" # 你的网站的 URL
 
 # 构建设置
