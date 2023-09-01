@@ -2,7 +2,7 @@
 title: My Jekyll Blog
 description: A simple blog built with Jekyll
 baseurl: "wangdonghui.com" # 如果你使用自定义域名，请设置为你的域名，例如 "/blog"
-url: "https://example.com" # 你的网站的 URL
+url: "https://wangdonghui.com" # 你的网站的 URL
 
 # 构建设置
 markdown: kramdown # 选择你喜欢的 Markdown 引擎
