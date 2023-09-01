@@ -1,1 +1,43 @@
-theme: minima
+# 基本设置
+title: My Jekyll Blog
+description: A simple blog built with Jekyll
+baseurl: "" # 如果你使用自定义域名，请设置为你的域名，例如 "/blog"
+url: "https://example.com" # 你的网站的 URL
+
+# 构建设置
+markdown: kramdown # 选择你喜欢的 Markdown 引擎
+theme: minima # 选择你的主题（可以是自定义主题或内置主题）
+
+# 插件设置（可选）
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# 日期格式设置
+date_format: "%Y-%m-%d"
+
+# 网站作者信息
+author:
+  name: Your Name
+  email: your@email.com
+  bio: Web Developer
+
+# 社交媒体链接
+social:
+  - title: Twitter
+    url: https://twitter.com/your_twitter
+  - title: GitHub
+    url: https://github.com/your_github
+
+# 导航菜单设置（可选）
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Blog
+    url: /blog
+
+# 其他设置
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "_site", ".git"] # 不包括这些文件和目录在构建中
+
