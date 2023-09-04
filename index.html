@@ -1,106 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>瀑布流相册</title>
-  <style>
-    /* 设置容器的宽度，可以根据需要进行调整 */
-    .gallery {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* 设置瀑布流列的宽度和间距，可以根据需要进行调整 */
-    .column {
-      width: 300px;
-      float: left;
-      margin-right: 20px;
-    }
-
-    /* 设置照片的样式，可以根据需要进行调整 */
-    .photo {
-      margin-bottom: 20px;
-    }
-
-    .photo img {
-      width: 100%;
-      display: block;
-    }
-
-    /* 设置首页大图片的样式 */
-    .hero-image {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .hero-image-text {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 24px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-    }
-  </style>
+<meta charset="utf-8">
+<title>王东辉的小屋</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="gallery">
-    <!-- 瀑布流中的图片动态生成 -->
+  <div class="masonry">
+    <div class="item">
+      <img src="https://picsum.photos/360/460?random=1">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/520?random=2">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/420?random=3">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/420?random=4">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/480?random=5">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/500?random=6">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/500?random=7">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/400?random=8">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/440?random=9">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/420?random=10">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/500?random=11">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/460?random=12">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/480?random=13">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/440?random=14">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/360/420?random=15">
+    </div>
   </div>
-
-  <div class="hero-image">
-    <div class="hero-image-text">我的小屋</div>
-    <img src="https://self-photo-1311110920.cos.ap-beijing.myqcloud.com/WechatIMG3.jpeg" alt="Hero Image">
-  </div>
-
-  <script>
-    // 图像集合
-    var imageCollection = [
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F5ddd9ee4-25d5-4a3c-b2a3-ea1e6aa5fbe1%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388671&t=f261d20a1f812f48b02a4859c61bd511',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201608%2F03%2F20160803151703_cB2PL.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388766&t=9459323306c2a950f452504c2fde63a3',
-      'https://c-ssl.dtstatic.com/uploads/item/201705/28/20170528210913_UTn82.thumb.1000_0.png',
-      'https://hbimg.b0.upaiyun.com/3ab7c23f306be2b4ae6a21f86010988ce3afa210d6be-6XhtBA_fw658',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F8f3425b7-70a3-4efb-85e3-f8774d59052f%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388859&t=1de45e47f53e5a29e01bc6a565feb7b2',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F39c86797-8b17-4549-a029-19a623c10043%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388859&t=baa06d1243332192be6982c3dc6efe3b',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F86efaaf2-3b1d-47d6-9ffa-4849b06d3de2%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388860&t=6dbd832d6c152243efd8f1b695e70c76',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F1d8dc53c-f242-4cdd-a8a9-d647eda908f9%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388860&t=4ee50073a8d138b72108fe9e3c5aab55',
-      'https://bkimg.cdn.bcebos.com/pic/7c1ed21b0ef41bd5001ff50b51da81cb38db3d84',
-      'https://p4.itc.cn/images01/20200914/fa30c21b5b054e69afb00d0c26e42da0.jpeg',
-      'https://bkimg.cdn.bcebos.com/pic/1ad5ad6eddc451da81cb19d329b24566d016092494fe',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201810%2F14%2F20181014143422_xMyhK.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696388949&t=5c20014cefe964da5f97214c997262b9',
-      
-      // 添加更多的图像URL
-    ];
-
-    // 动态生成瀑布流中的图片
-    var gallery = document.querySelector('.gallery');
-    if (gallery) {
-      imageCollection.forEach(function(imageUrl) {
-        var column = document.createElement('div');
-        column.className = 'column';
-
-        var photo = document.createElement('div');
-        photo.className = 'photo';
-
-        var image = document.createElement('img');
-        image.src = imageUrl;
-        image.alt = 'Photo';
-
-        photo.appendChild(image);
-        column.appendChild(photo);
-        gallery.appendChild(column);
-      });
-    }
-
-    // 当页面滚动时，固定首页大图片
-    window.addEventListener('scroll', function() {
-      var heroImage = document.querySelector('.hero-image');
-      if (heroImage) {
-        heroImage.style.position = (window.pageYOffset > 0) ? 'fixed' : 'static';
-      }
-    });
-  </script>
 </body>
 </html>
