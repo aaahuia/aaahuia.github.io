@@ -28,7 +28,7 @@ body {
     height: auto;
   }
   
-  .item::after {
+  /* .item::after {
     position: absolute;
     display: block;
     top: 2px;
@@ -40,7 +40,7 @@ body {
     background-color: #000;
     color: #fff;
     content: counter(item-counter);
-  }
+  } */
   
   .item:nth-child(4n+1) {
     order: 1;

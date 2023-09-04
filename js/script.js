@@ -16,6 +16,7 @@ var imageCollection = [
     
     // 添加更多的图像URL
 ];
+// 123
 
 // 动态生成瀑布流中的图片
 var gallery = document.querySelector('.gallery');
@@ -34,6 +35,5 @@ if (gallery) {
     photo.appendChild(image);
     column.appendChild(photo);
     gallery.appendChild(column);
-    });
-};
+    })};
 </script>
