@@ -18,26 +18,24 @@ date_format: "%Y-%m-%d"
 
 # 网站作者信息
 author:
-  name: Your Name
-  email: your@email.com
+  name: wangdonghui
+  email: 1076032567@qq.com
   bio: Web Developer
 
 # 社交媒体链接
 social:
-  - title: Twitter
-    url: https://twitter.com/your_twitter
   - title: GitHub
-    url: https://github.com/your_github
+    url: https://github.com/aaahuia
 
 # 导航菜单设置（可选）
-nav:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Blog
-    url: /blog
+# nav:
+#   - title: Home
+#     url: /
+#   - title: About
+#     url: /about
+#   - title: Blog
+#     url: /blog
 
 # 其他设置
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "_site", ".git"] # 不包括这些文件和目录在构建中
+# exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "_site", ".git"] # 不包括这些文件和目录在构建中
 
