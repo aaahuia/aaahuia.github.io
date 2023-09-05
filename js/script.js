@@ -1,5 +1,3 @@
-document.getElementById("title_name").innerHTML="王东辉的小屋";
-
 const $masonry=document.querySelector('.masonry')
 const generateHtml=(arr)=>{
     let str=""
