@@ -33,6 +33,3 @@ const data=['https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhsc
 'https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0803%2F7ce32cd0j00qx9ef7005kc000m500w2m.jpg&thumbnail=650x2147483647&quality=80&type=jpg',
 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F01%2F20150501085353_5amw2.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1696498942&t=364e7a22bb1d323f22c379d6b0b238f3',]
 $masonry.innerHTML=generateHtml(data)
-
-let htmlContent = $masonry.innerHTML;  
-console.log(htmlContent);  
