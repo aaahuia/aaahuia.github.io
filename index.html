@@ -6,8 +6,16 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="masonry">
-  </div>
-  <script src="js/script.js"></script> 
-</body>
+  <button onclick="redirectToPaperPage()">跳转到论文学习页面</button>
+  <script>
+    function redirectToPaperPage() {
+        window.location.href = "htmls/paper_read.html";
+    }
+  </script>
+  <button onclick="redirectToImageShowPage()">跳转到个人摄影页面</button>
+  <script>
+    function redirectToImageShowPage() {
+        window.location.href = "htmls/images_show.html";
+    }
+  </script>
 </html>
