@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>王东辉的小屋</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <title>登录</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .login-box {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* 添加此行 */
+      }
+      
+      .login-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function checkInput() {
+      var name = document.getElementById("name").value;
+      var id = document.getElementById("id").value;
+      
+      var isValid = id.startsWith("1306") && id.endsWith("954");
+
+      if (name === "丁伟杰" && isValid) {
+        window.location.href = "htmls/dingweijie_images_show.html";
+      } else {
+        alert("输入错误");
+        return false;
+      }
+      }
+    </script>
+  </head>
 <body>
-  <button onclick="redirectToPaperPage()">跳转到论文学习页面</button>
-  <script>
-    function redirectToPaperPage() {
-        window.location.href = "htmls/paper_read.html";
-    }
-  </script>
-  <button onclick="redirectToImageShowPage()">跳转到个人摄影页面</button>
-  <script>
-    function redirectToImageShowPage() {
-        window.location.href = "htmls/images_show.html";
-    }
-  </script>
+  <div class="container">
+    <div class="login-box">
+      <h2>登录</h2>
+      <input type="text" id="name" placeholder="姓名">
+      <input type="text" id="id" placeholder="身份证号">
+      <button type="button" onclick="return checkInput()">确定</button>
+    </div>
+  </div>
+</body>
 </html>
