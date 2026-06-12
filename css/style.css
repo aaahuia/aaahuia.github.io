@@ -214,6 +214,48 @@ a:hover {
   margin: 1.5rem 0;
 }
 
+/* Images */
+.article-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+.article-content .img-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-content .img-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.article-content .img-group img {
+  margin: 0;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .article-content .img-group {
+    grid-template-columns: 1fr;
+  }
+}
+
 .back-link {
   display: inline-block;
   margin: 3rem 0;
