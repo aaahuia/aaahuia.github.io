@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>王东辉的小屋</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donghui's Blog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <button onclick="redirectToPaperPage()">跳转到论文学习页面</button>
-  <script>
-    function redirectToPaperPage() {
-        window.location.href = "/htmls/paper_read.html";
-    }
-  </script>
-  <button onclick="redirectToImageShowPage()">跳转到个人摄影页面</button>
-  <script>
-    function redirectToImageShowPage() {
-        window.location.href = "/htmls/images_show.html";
-    }
-  </script>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Donghui's Blog</a>
+      <div class="nav-links">
+        <a href="/">文章</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, 我是王东辉</h1>
+      <p>记录生活、旅行与思考</p>
+    </section>
+
+    <section class="post-list">
+      <article class="post-card">
+        <div class="post-card-date">2026-06-12</div>
+        <h2 class="post-card-title">
+          <a href="posts/qingdao-travel-guide.html">青岛三天两夜旅游攻略｜海风、啤酒与老城漫步</a>
+        </h2>
+        <p class="post-card-summary">一份详细的青岛短途旅行指南，涵盖栈桥、崂山、八大关等经典景点，以及本地美食推荐和实用出行建议。</p>
+        <div class="post-card-tags">
+          <span class="tag">旅行</span>
+          <span class="tag">青岛</span>
+          <span class="tag">攻略</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Donghui's Blog. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
